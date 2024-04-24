@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de suscripcion Rosario3</title>
+</head>
+<body>
+    <h1>Suscripcion Rosario3</h1>
+    <form action="https://noticiasargentinas.com/" method="get">
+       
+        <div>
+            <label for="nombre">Nombre/s:</label>
+            <input type="text" name="name" placeholder="Tu/s nombre/s">
+        </div>
+        <div>
+            <label for="nombre">Apellido/s:</label>
+            <input type="text" name="name" placeholder="Tu/s apellido/s">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com" required>
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Tu edad" required>
+        </div>
+        <div>
+            <label for="genero">Género:</label><br>
+            <input type="radio" id="genero-m" name="genero" value="masculino">
+            <label for="genero-m">Masculino</label><br>
+            <input type="radio" id="genero-f" name="genero" value="femenino">
+            <label for="genero-f">Femenino</label><br>
+        </div>
+        <div>
+            <label for="intereses"> De que te gustaria recibir noticias?</label><br>
+            <input type="checkbox" id="interes-politica" name="intereses[]" value="politica">
+            <label for="interes-politica">Politica</label><br>
+            <input type="checkbox" id="interes-tecnologia" name="intereses[]" value="tecnologia">
+            <label for="interes-tecnologia">Tecnología</label><br>
+            <input type="checkbox" id="interes-deporte" name="intereses[]" value="deporte">
+            <label for="interes-deporte">Deporte</label><br>
+            <input type="checkbox" id="interes-viajes" name="intereses[]" value="viajes">
+            <label for="interes-viajes">Viajes</label><br>
+            <label for="interes-otros">Otros</label><br>
+            <textarea id="otros-intereses" name="otros-intereses" placeholder="Especifica otros intereses aquí" rows="2" cols="30"></textarea>
+        </div>
+        <div>
+         <button type="submit">Suscribirse</button>
+            <button type="reset">Resetear</button>
+          
+        </div>
+    </form>
+
+    </form>
+</body>
+</html>
