@@ -1,0 +1,124 @@
+
+article { 
+    margin: 60;
+    padding: 0;
+}
+
+.izquierda {
+    background: white;
+    height: 100vh; 
+    width: 50%;  
+}
+
+.derecha {
+    background: url(inicio.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh; 
+    
+}
+
+.izquierdatitulo{
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right:50px;
+    text-align: center;
+    
+}
+
+#pantalla-dividida {
+    display: flex;
+}
+
+h1 {
+    color:#121212;
+    font-style:normal;
+    font-weight: 500;
+    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+    text-align: center;
+    width: 90%; 
+} 
+
+.subtitulo{
+    font-style: normal;
+    font-stretch: normal;
+    color: #363636;
+    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+    width: 90%;
+}
+
+.partesuperior-titulo{
+    font-style: normal;
+    font-stretch: normal;
+    color: #363636;
+    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+    width: 90%;
+}
+
+article{
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: left;
+    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+}
+
+.abajofoto{
+    color: #727272;
+    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
+    position: right;
+    margin-top: 630px;
+    margin-left: 300px;;
+}
+
+nav{
+    display: inline-block;
+    align-items: center;
+    margin-left: 0;
+}
+ul {
+    list-style: none; /* Quita los puntos de lista */
+    padding: 0; /* Quita el espacio interno */
+}
+
+
+ul li{
+    display: inline-block;
+    padding: 0 70px;
+
+}
+
+img {
+    width: auto;
+    height: 20px; /* Altura de las imágenes */
+  }
+
+.compartir1{
+    display: inline-block;
+    width: 5%;
+    font-family: arial;
+    font-weight: 100;
+    background-color: white;
+    border-radius: 100px;
+    padding: 5px 10px;
+    margin: 50px 3px;
+    color: black;
+    border-color:#727272;
+    border: 1px solid
+  }
+
+  .compartir2{
+    display: inline-block;
+    font-family: arial;
+    font-weight: 20px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 1px 10px;
+    color: black;
+    border-color:#727272;
+    border: 1px solid
+  }
+
+  .info{
+    font-family: arial;
+  }
