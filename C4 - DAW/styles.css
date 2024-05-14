@@ -1,6 +1,6 @@
-
+/* Estilos para dispositivos desktop */
 article { 
-    margin: 60;
+    margin: 60px; /* Margen grande alrededor del artículo */
     padding: 0;
 }
 
@@ -8,6 +8,7 @@ article {
     background: white;
     height: 100vh; 
     width: 50%;  
+    float: left; /* Alinear a la izquierda */
 }
 
 .derecha {
@@ -15,16 +16,15 @@ article {
     background-size: cover;
     background-position: center;
     width: 50%;
-    height: 100vh; 
-    
+    height: 100vh;
+    float: right; /* Alinear a la derecha */
 }
 
-.izquierdatitulo{
+.izquierdatitulo {
     margin-top: 150px;
     margin-left: 50px;
-    margin-right:50px;
-    text-align: center;
-    
+    margin-right: 50px;
+    text-align: center;  
 }
 
 #pantalla-dividida {
@@ -32,15 +32,15 @@ article {
 }
 
 h1 {
-    color:#121212;
-    font-style:normal;
+    color: #121212;
+    font-style: normal;
     font-weight: 500;
     font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
     text-align: center;
     width: 90%; 
 } 
 
-.subtitulo{
+.subtitulo {
     font-style: normal;
     font-stretch: normal;
     color: #363636;
@@ -48,7 +48,7 @@ h1 {
     width: 90%;
 }
 
-.partesuperior-titulo{
+.partesuperior-titulo {
     font-style: normal;
     font-stretch: normal;
     color: #363636;
@@ -56,22 +56,15 @@ h1 {
     width: 90%;
 }
 
-article{
-    margin-left: 400px;
-    margin-right: 400px;
-    text-align: left;
-    font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
-}
-
-.abajofoto{
+.abajofoto {
     color: #727272;
     font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
-    position: right;
+    position: relative;
     margin-top: 630px;
-    margin-left: 300px;;
+    margin-left: 300px;
 }
 
-nav{
+nav {
     display: inline-block;
     align-items: center;
     margin-left: 0;
@@ -81,19 +74,17 @@ ul {
     padding: 0; /* Quita el espacio interno */
 }
 
-
-ul li{
+ul li {
     display: inline-block;
     padding: 0 70px;
-
 }
 
 img {
     width: auto;
     height: 20px; /* Altura de las imágenes */
-  }
+}
 
-.compartir1{
+.compartir1 {
     display: inline-block;
     width: 5%;
     font-family: arial;
@@ -103,11 +94,11 @@ img {
     padding: 5px 10px;
     margin: 50px 3px;
     color: black;
-    border-color:#727272;
-    border: 1px solid
-  }
+    border-color: #727272;
+    border: 1px solid;
+}
 
-  .compartir2{
+.compartir2 {
     display: inline-block;
     font-family: arial;
     font-weight: 20px;
@@ -115,10 +106,64 @@ img {
     border-radius: 30px;
     padding: 1px 10px;
     color: black;
-    border-color:#727272;
-    border: 1px solid
-  }
+    border-color: #727272;
+    border: 1px solid;
+}
 
-  .info{
+.info {
     font-family: arial;
-  }
+}
+
+.hamburguesa {
+    display: none; /* Inicialmente oculto */
+}
+  
+/* Media queries para tablet (máximo de 1024px) */
+@media screen and (max-width: 1024px) {
+    article {
+        margin: 30px; /* Reducir el margen en tablets */
+    }
+
+    .izquierda, .derecha {
+        width: 100%; /* En tablets, cada columna ocupará el 100% del ancho */
+        height: auto; /* Altura automática */
+        float: none; /* Anular el flotado */
+    }
+
+    .izquierdatitulo {
+        margin-top: 50px; /* Aumentar el margen superior */
+        margin-left: 30px; /* Ajustar el margen izquierdo */
+        margin-right: 30px; /* Ajustar el margen derecho */
+    }
+
+    .abajofoto {
+        margin-top: 600px; /* Aumentar el margen superior */
+        margin-bottom: 30px; /* Aumentar el margen inferior */
+        text-align: center; /* Alinear al centro */
+    }
+}
+
+/* Media queries para dispositivos móviles (máximo de 640px) */
+@media screen and (max-width: 640px) {
+    article {
+        margin: 20px; /* Reducir el margen en móviles */
+    }
+
+    .izquierdatitulo {
+        margin-top: 30px; /* Aumentar el margen superior */
+        margin-left: 20px; /* Ajustar el margen izquierdo */
+        margin-right: 20px; /* Ajustar el margen derecho */
+    }
+
+    .abajofoto {
+        margin-top: 90px; /* Aumentar el margen superior */
+        margin-bottom: 20px; /* Aumentar el margen inferior */
+        text-align: center; /* Alinear al centro */
+    }
+
+    .hamburguesa {
+        display: inline-block; /* Mostrar solo en dispositivos móviles */
+    }
+
+}
+
